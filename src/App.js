@@ -30,7 +30,7 @@ function App() {
       <Route elemet={<SignIn/>} path='/signin'/>
       <Route element={<SignUp/>} path='/signup'/>
       <Route element={<Hero setGetId={setGetId} search={search} setDetails={setDetails} />} path='/'/>
-      <Route element={<Details detId={getId} details={details}/>} path={`/details/:id`}/>
+      {/* <Route element={<Details detId={getId} details={details}/>} path={`/details/:id`}/> */}
       <Route element={<About/>} path='/about'/>
       </Routes>
       <Footer/>
