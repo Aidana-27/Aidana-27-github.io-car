@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.container {
+  max-width: 1030px;
+  margin: 0 auto;
+  padding: 0 15px;
+  background: #fff;
+}
+
+.bg {
+  background-color: gainsboro;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* header */
+
+.header__ad {
+  height: 200px;
+}
+
+.header__ad img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.header__logo {
+  height: 40px;
+}
+
+.header__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* header */
+
+
+
+/* hero */
+
+#app {
+  height: 70%;
+}
+
+html,
+body {
+  position: relative;
+  height: 70%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 150px;
+  height: 150px;
+}
+
+
+.cards:hover{
+  transform: scale(1.1)
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* hero */
+
+
+/* newCar */
+
+
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+.menu button::after{
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+.menu button:hover::after{
+  width: 100%;
+}
+
+
+.inp{
+  display: flex;
+  align-self: center;
+}
+
+/* details */
+
+.image{
+  height: 500px;
+}
+
+.image img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+
+

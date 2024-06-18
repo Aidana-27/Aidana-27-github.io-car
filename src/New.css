@@ -1,0 +1,33 @@
+.swiper {
+    width: 100%;
+    height: 170px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .swiper-slide {
+    background: #fff;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+  
+  .newCar__img{
+    height: 50px;
+  }
+  
+  .newCar__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .newCar__wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .newCar__wrapper:hover{
+    transform: scale(1.1)
+  }
