@@ -41,11 +41,12 @@ const Details = ({details}) => {
                 </div>
             </div>
             <div class="w-1/2 px-10">
-                <div class="mb-10">
+                <div class="mb-5">
                     <h1 class="font-bold uppercase text-3xl mb-5">{details.car}</h1>
                     <p class="text-xl">{details.car_model}</p>
                     <p class="text-xl">{details.car_color}</p>
                 </div>
+                <p className='mb-5'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos repudiandae inventore aliquid exercitationem earum voluptatem recusandae mollitia aliquam, ut fugiat!</p>
                 <div>
                     <div class="inline-block align-bottom mr-5">
                         <span class="font-bold  text-4xl leading-none align-baseline">{details.price}</span>

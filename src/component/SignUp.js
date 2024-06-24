@@ -53,7 +53,7 @@ const SignUp = ({ isOpen, onClose }) => {
   
             <button
               type="submit"
-              className="w-full text-center py-3 rounded bg-green text-white hover:bg-green-dark focus:outline-none my-1"
+              className="block bg-gray-700 border border-grey-light w-full p-3 rounded mb-4"
             >Создать аккаунт</button>
   
             <div className="text-center text-sm text-grey-dark mt-4">

@@ -33,7 +33,7 @@ const Headers = ({setSearch}) => {
       <div className='container border '>
         <header class="py-1.5 text-black-100 bg-white shadow-sm">
           <div class="container flex items-start mx-auto md:flex-row">
-          <a href="#" class="header__logo flex-shrink-0 flex items-center justify-center px-4 lg:px-6 xl:px-8">
+          <a href="/" class="header__logo flex-shrink-0 flex items-center justify-center px-4 lg:px-6 xl:px-8">
               <img className="img" src="https://i.ibb.co/W6ZXdqN/2021-10-26-16h20-21.png" alt="" />
             </a>
             <nav class="flex py-1.5 items-center justify-center md:ml-auto">
@@ -41,8 +41,8 @@ const Headers = ({setSearch}) => {
                 <ul>
                   <li><NavLink to="/"> <a className='mr-5  hover:text-black-900 text-lg  peer' href="#hero">Главная</a></NavLink></li>
                   <li><NavLink to="/about"><a className='mr-5  hover:text-black-900 text-lg  peer' href="#">О нас</a></NavLink></li>
-                  <li><a className='mr-5  hover:text-black-900 text-lg  peer' href="#">Услуги</a></li>
-                  <li><a className='mr-5 hover:text-black-900 text-lg  peer' href="#" >Контакты</a></li>
+                  <li><NavLink to="/services"><a className='mr-5  hover:text-black-900 text-lg  peer' href="#">Услуги</a></NavLink></li>
+                  <li><NavLink to="/contact"><a className='mr-5 hover:text-black-900 text-lg  peer' href="#" >Контакты</a></NavLink></li>
                 </ul>
               </nav>
             </nav>
@@ -51,7 +51,7 @@ const Headers = ({setSearch}) => {
                 <button id="buttonmodal"  onClick={openSignIn} class="focus:outline-none p-2 text-black rounded-lg " type="button">Войти</button>
               </div>
               <a href="#_"
-                class="px-4 py-2 p-0.5 text-xs font-semibold text-white  peer uppercase transition-all duration-150 bg-teal-500 rounded shadow outline-none active:bg-teal-600 hover:shadow-md focus:outline-none ease">
+                class="px-4 py-2 p-0.5 text-xs font-semibold text-white peer uppercase transition-all duration-150 bg-teal-500 rounded shadow outline-none active:bg-teal-600 hover:shadow-md focus:outline-none ease md:h-10">
                 Добавить объявление
               </a>
             </div>

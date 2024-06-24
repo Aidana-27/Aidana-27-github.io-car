@@ -14,6 +14,7 @@ const Cards = ({el,id,search,setGetId,setDetails,setHendleClick}) => {
   setHendleClick(handleClick)
 setGetId(id)
   return (
+    <NavLink to={`/details/${id}`}>
     <>
       {el.car.toLowerCase().includes(search.toLowerCase()) &&
       <div onClick={handleClick} class="cards w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
@@ -45,6 +46,7 @@ setGetId(id)
         </div>
       </div>}
     </>
+    </NavLink>
   )
 }
 

@@ -9,6 +9,8 @@ import Hero from './pages/Hero';
 import Footer from './component/Footer';
 import Details from './pages/Details';
 import About from './pages/About';
+import Contact from './pages/Contact';
+import Services from './pages/Services';
 
 function App() {
   const [search,setSearch]=useState('')
@@ -32,6 +34,8 @@ function App() {
       <Route element={<Hero setGetId={setGetId} search={search} setDetails={setDetails} />} path='/'/>
       <Route element={<Details detId={getId} details={details}/>} path={`/details/:id`}/>
       <Route element={<About/>} path='/about'/>
+      <Route element={<Contact/>} path='/contact'/>
+      <Route element={<Services/>} path='/services'/>
       </Routes>
       <Footer/>
       </BrowserRouter>

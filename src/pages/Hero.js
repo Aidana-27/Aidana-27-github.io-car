@@ -9,7 +9,7 @@ const Hero = ({search,setGetId,setDetails}) => {
   const [product,setProduct]=useState([])
   useEffect(() => {
     axios("https://myfakeapi.com/api/cars")
-      .then(({ data }) => setProduct(data.cars.slice(0, 20)))
+      .then(({ data }) => setProduct(data.cars.slice(0, 30)))
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
