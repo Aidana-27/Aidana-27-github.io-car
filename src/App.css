@@ -35,6 +35,10 @@ button {
 
 /* header */
 
+.headers__tree{
+  display: none ;
+}
+
 .header__ad {
   height: 200px;
 }
@@ -86,7 +90,7 @@ body {
 }
 
 
-.cards:hover{
+.cards__:hover{
   transform: scale(1.1)
 }
 

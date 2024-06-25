@@ -24,7 +24,7 @@ const Hero = ({search,setGetId,setDetails}) => {
               Легковые авто
             </h2>
           </div>
-          <div class="grid grid-rows-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-3">
+          <div class="hero__card grid grid-rows-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-3">
             {product.map((el,id) => (
               <Cards setHendleClick={setHendleClick} el={el} id={id} setGetId={setGetId} search={search} setDetails={setDetails}/>
             ))}

@@ -3,10 +3,10 @@ import React from 'react'
 const SignIn = ({ isOpen, onClose, openSignUp }) => {
   return (
     <div
-      className={`fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-blue-500 bg-opacity-50 transform ${isOpen ? 'scale-100' : 'scale-0'
+      className={`signin__wrapper fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-blue-500 bg-opacity-50 transform ${isOpen ? 'scale-100' : 'scale-0'
         } transition-transform duration-300 z-50`}
     >
-      <div className="bg-gray-600 w-4/12 p-12">
+      <div className="signin__card bg-gray-600 w-4/12 p-12">
         <button type="button" className="focus:outline-none" onClick={onClose}>
           <svg
             xmlns="http://www.w3.org/2000/svg"

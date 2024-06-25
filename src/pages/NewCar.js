@@ -35,6 +35,43 @@ export default function NewCar({hendleClick}) {
         pagination={{
           clickable: true,
         }}
+        breakpoints={{
+          320: {
+            slidesPerView: 3,
+            pagination: {
+              clickable: true,
+              dynamicBullets: true,
+            },
+          },
+          480: {
+            slidesPerView: 3,
+            pagination: {
+              clickable: true,
+              dynamicBullets: true,
+            },
+          },
+          640: {
+            slidesPerView: 3,
+            pagination: {
+              clickable: true,
+              dynamicBullets: false,
+            },
+          },
+          768: {
+            slidesPerView: 4,
+            pagination: {
+              clickable: true,
+              dynamicBullets: false,
+            },
+          },
+          1024: {
+            slidesPerView: 5,
+            pagination: {
+              clickable: true,
+              dynamicBullets: false,
+            },
+          },
+        }}
         modules={[Grid, Pagination , Navigation , Mousewheel, Keyboard]}
         className="mySwiper"
         cssMode={true}
@@ -47,7 +84,7 @@ export default function NewCar({hendleClick}) {
           <SwiperSlide className='newCar__img'>
             <div onClick={hendleClick}  className="newCar__wrapper">
             <img src="https://s0.rbk.ru/v6_top_pics/media/img/2/01/756582168340012.jpg" alt='car' />
-            <p>{el.car}</p>
+            <p className='newCar__text'>{el.car}</p>
             </div>
           </SwiperSlide>
         ))}

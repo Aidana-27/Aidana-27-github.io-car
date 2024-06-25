@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 import './New.css';
+import './media.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Headers from './layouts/Headers';
 import SignIn from './component/SignIn';
