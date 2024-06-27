@@ -4,6 +4,7 @@ import Cards from "./Cards";
 import NewCar from './NewCar'
 import axios from 'axios';
 
+
 const Hero = ({search,setGetId,setDetails}) => {
   const [hendleClick,setHendleClick]=useState('')
   const [product,setProduct]=useState([])

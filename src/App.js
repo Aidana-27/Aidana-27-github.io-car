@@ -12,6 +12,8 @@ import Details from './pages/Details';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Services from './pages/Services';
+import Add from './component/Add';
+
 
 function App() {
   const [search,setSearch]=useState('')
@@ -37,6 +39,7 @@ function App() {
       <Route element={<About/>} path='/about'/>
       <Route element={<Contact/>} path='/contact'/>
       <Route element={<Services/>} path='/services'/>
+      <Route element={<Add/>} path='/add'/>
       </Routes>
       <Footer/>
       </BrowserRouter>

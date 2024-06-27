@@ -1,10 +1,23 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Footer = () => {
     return (
         <div className='container'>
             <section class="bg-white border">
                 <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+                <div class="footer__second p-4 bg-white md:flex md:items-center md:justify-between md:p-6">
+                <nav class="flex py-1.5 items-center justify-center md:ml-auto">
+              <nav class="menu font-semibold">
+                <ul>
+                  <li><NavLink to="/"> <a className='mr-5  hover:text-black-900 text-lg  peer' href="#hero">Главная</a></NavLink></li>
+                  <li><NavLink to="/about"><a className='mr-5  hover:text-black-900 text-lg  peer' href="#">О нас</a></NavLink></li>
+                  <li><NavLink to="/services"><a className='mr-5  hover:text-black-900 text-lg  peer' href="#">Услуги</a></NavLink></li>
+                  <li><NavLink to="/contact"><a className='mr-5 hover:text-black-900 text-lg  peer' href="#" >Контакты</a></NavLink></li>
+                </ul>
+              </nav>
+            </nav>
+	</div>
                     <div class="flex justify-center mt-8 space-x-6">
                         <a href="https://www.facebook.com/mashina.kg/" class="text-gray-400 hover:text-gray-500" target='blank'>
                             <span class="sr-only">Facebook</span>

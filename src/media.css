@@ -26,8 +26,7 @@
 
       .hero__card{
         display: grid;
-        grid-template-columns:1fr 1fr 1fr;
-        height: 400px;
+        grid-template-columns:1fr 1fr;
       }
 
       .signin__wrapper{
@@ -84,6 +83,20 @@
 
       .cards__price{
         font-size: 18px;
+      }
+
+      .details__home{
+        margin-top: 100px;
+      }
+
+      .details__text{
+        width: 200px;
+      }
+
+      .footer__second{
+        visibility: visible;
+        max-width: 400px;
+        margin: 0 auto;
       }
 
    

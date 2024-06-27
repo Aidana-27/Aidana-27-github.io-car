@@ -10,7 +10,7 @@ const Details = ({details}) => {
 
   return (
     <div className='container'>
-            <NavLink to="/">
+            <NavLink to="/" className="details__home">
             <a href="#_"
                 class="px-4 py-2 my-3.5 p-0.5 text-xs font-semibold text-white  peer uppercase transition-all duration-150 bg-teal-500 rounded shadow outline-none active:bg-teal-600 hover:shadow-md focus:outline-none ease">
                 На главную
@@ -46,7 +46,7 @@ const Details = ({details}) => {
                     <p class="text-xl">{details.car_model}</p>
                     <p class="text-xl">{details.car_color}</p>
                 </div>
-                <p className='mb-5'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos repudiandae inventore aliquid exercitationem earum voluptatem recusandae mollitia aliquam, ut fugiat!</p>
+                <p className='details__text mb-5'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos repudiandae inventore aliquid exercitationem earum voluptatem recusandae mollitia aliquam, ut fugiat!</p>
                 <div>
                     <div class="inline-block align-bottom mr-5">
                         <span class="font-bold  text-4xl leading-none align-baseline">{details.price}</span>

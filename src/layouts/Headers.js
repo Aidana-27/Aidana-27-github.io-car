@@ -156,6 +156,7 @@ const Headers = ({setSearch}) => {
 
 
       <div class="headers__tree fixed bottom-4 left-1/2 transform -translate-x-1/2 inline-flex left-0 mx-auto justify-between bg-blue-600 w-11/12 rounded-3xl text-center">
+      <NavLink to="/">
       <a
         aria-current="page"
         class="inline-flex flex-col items-center text-xs font-medium py-3 px-4 text-white flex-grow"
@@ -171,27 +172,12 @@ const Headers = ({setSearch}) => {
         </svg>
         <span class="sr-only">Home</span>
       </a>
-      <a
+      </NavLink>
+       <a
         class="inline-flex flex-col items-center text-xs font-medium text-blue-400 py-3 px-4 flex-grow"
         href="#"
       >
-        <svg
-          class="w-7 h-7"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </a>
-      <span class="sr-only">Upload</span>
-      <button class="relative inline-flex flex-col items-center text-xs font-medium text-white py-3 px-6 flex-grow">
-        <div class="absolute bottom-5 p-3 rounded-full border-4 border-white bg-blue-600">
-          <svg
+         <svg
             class="w-8 h-8"
             fill="currentColor"
             viewBox="0 0 20 20"
@@ -203,10 +189,28 @@ const Headers = ({setSearch}) => {
               clip-rule="evenodd"
             ></path>
           </svg>
+      </a>
+      <span class="sr-only">Chat</span>
+      <NavLink to="/add">
+      <button class="relative inline-flex flex-col items-center text-xs font-medium text-white py-3 px-6 flex-grow">
+        <div class="absolute bottom-5 p-3 rounded-full border-4 border-white bg-blue-600">
+         <svg
+          class="w-7 h-7"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
         </div>
-        <span class="sr-only">Chat</span>
+        <span class="sr-only">Upload</span>
       </button>
-      <a
+      </NavLink>
+     <a
         class="inline-flex flex-col items-center text-xs font-medium text-blue-400 py-3 px-4 flex-grow"
         href="#"
       >
